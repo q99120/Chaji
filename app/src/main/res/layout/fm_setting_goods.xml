@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.activity.OpsActivity">
+
+    <ImageView
+        android:id="@+id/ops_top_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ops_top_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品设置"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ops_top_top"
+        app:layout_constraintLeft_toLeftOf="@id/ops_top_top"
+        app:layout_constraintRight_toRightOf="@id/ops_top_top"
+        app:layout_constraintTop_toTopOf="@id/ops_top_top" />
+
+
+    <TextView
+        android:id="@+id/tv_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="B货道"
+        android:textColor="#666666"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line2"
+        app:layout_constraintRight_toRightOf="@id/iv_line2"
+        app:layout_constraintTop_toBottomOf="@id/ops_top_top" />
+
+    <ImageButton
+        android:id="@+id/iv_line2"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/shape_dotted_line"
+        app:layout_constraintLeft_toLeftOf="@id/ops_top_top"
+        app:layout_constraintTop_toBottomOf="@id/tv_b" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:src="@mipmap/tea2"
+        app:layout_constraintBottom_toBottomOf="@id/iv_line2"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line2"
+        app:layout_constraintRight_toRightOf="@id/iv_line2"
+        app:layout_constraintTop_toTopOf="@id/iv_line2" />
+
+    <TextView
+        android:id="@+id/tv_tea2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="蜜桃乌龙茶"
+        android:textColor="#4b3e3b"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintRight_toRightOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击选择商品"
+        android:layout_marginBottom="@dimen/dp_5"
+        app:layout_constraintBottom_toBottomOf="@id/iv_line2"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line2"
+        app:layout_constraintRight_toRightOf="@id/iv_line2" />
+
+    <ImageView
+        android:id="@+id/btn_Sub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/icon_jian"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line2"
+        app:layout_constraintTop_toBottomOf="@id/iv_line2" />
+
+    <EditText
+        android:id="@+id/tv_cup_b"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_corner_retagne_black"
+        android:gravity="center"
+        android:enabled="false"
+        android:focusable="false"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_line2"
+        app:layout_constraintRight_toRightOf="@+id/iv_line2"
+        app:layout_constraintTop_toBottomOf="@id/btn_Sub2"
+        app:layout_constraintTop_toTopOf="@id/btn_Sub2" />
+
+    <ImageView
+        android:id="@+id/btn_add2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/icon_jia"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="@id/iv_line2"
+        app:layout_constraintTop_toBottomOf="@id/iv_line2" />
+
+
+
+    <TextView
+        android:id="@+id/tv_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="A货道"
+        android:textColor="#666666"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line1"
+        app:layout_constraintRight_toRightOf="@id/iv_line1"
+        app:layout_constraintTop_toBottomOf="@id/ops_top_top" />
+
+    <ImageButton
+        android:id="@+id/iv_line1"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/shape_dotted_line"
+        app:layout_constraintRight_toRightOf="@id/ops_top_top"
+        app:layout_constraintTop_toBottomOf="@id/tv_a" />
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:src="@mipmap/tea2"
+        app:layout_constraintBottom_toBottomOf="@id/iv_line1"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line1"
+        app:layout_constraintRight_toRightOf="@id/iv_line1"
+        app:layout_constraintTop_toTopOf="@id/iv_line1" />
+
+    <TextView
+        android:id="@+id/tv_tea1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="蜜桃乌龙茶"
+        android:textColor="#4b3e3b"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView1"
+        app:layout_constraintRight_toRightOf="@+id/imageView1"
+        app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击选择商品"
+        android:layout_marginBottom="@dimen/dp_5"
+        app:layout_constraintBottom_toBottomOf="@id/iv_line1"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line1"
+        app:layout_constraintRight_toRightOf="@id/iv_line1" />
+
+    <ImageView
+        android:id="@+id/btn_Sub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/icon_jian"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line1"
+        app:layout_constraintTop_toBottomOf="@id/iv_line1" />
+
+    <EditText
+        android:id="@+id/tv_cup_a"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_corner_retagne_black"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:enabled="false"
+        android:focusable="false"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_line1"
+        app:layout_constraintRight_toRightOf="@+id/iv_line1"
+        app:layout_constraintTop_toBottomOf="@id/btn_Sub1"
+        app:layout_constraintTop_toTopOf="@id/btn_Sub1" />
+
+    <ImageView
+        android:id="@+id/btn_add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/icon_jia"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="@id/iv_line1"
+        app:layout_constraintTop_toBottomOf="@id/iv_line1" />
+
+    <Button
+        android:id="@+id/a_key_pull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一键加满"
+        android:visibility="gone"
+        android:background="@drawable/shape_corner_retagne_yellow"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@id/btn_add1"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line1"
+        app:layout_constraintRight_toRightOf="@id/iv_line1" />
+
+
+    <Button
+        android:id="@+id/b_key_pull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一键加满"
+        android:visibility="gone"
+        android:background="@drawable/shape_corner_retagne_yellow"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@id/btn_add2"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line2"
+        app:layout_constraintRight_toRightOf="@id/iv_line2" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_corner_retagne_yellow"
+        android:text="确定"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.main.activity.OpsActivity">
+
+    <ImageView
+        android:id="@+id/ops_top_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ops_top_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="基本参数"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ops_top_top"
+        app:layout_constraintLeft_toLeftOf="@id/ops_top_top"
+        app:layout_constraintRight_toRightOf="@id/ops_top_top"
+        app:layout_constraintTop_toTopOf="@id/ops_top_top" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="55dp"
+        android:text="丢杯时间(单位: S)"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ops_top_top" />
+
+    <ImageView
+        android:id="@+id/iv_line_1"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/shape_dotted_line"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ops_top_top" />
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_jian"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="70dp"-->
+    <!--android:layout_marginRight="@dimen/dp_10"-->
+    <!--android:src="@mipmap/icon_jian"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/iv_line_1"-->
+    <!--app:layout_constraintLeft_toLeftOf="@id/iv_line_1"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/iv_line_1" />-->
+
+    <EditText
+        android:id="@+id/et_lost_cup"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_corner_retagne_black"
+        android:gravity="center"
+        android:hint="10~125"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_line_1"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_line_1"
+        app:layout_constraintRight_toRightOf="@+id/iv_line_1"
+        app:layout_constraintTop_toTopOf="@+id/iv_line_1" />
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_jia"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="70dp"-->
+    <!--android:src="@mipmap/icon_jia"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/iv_line_1"-->
+    <!--app:layout_constraintRight_toRightOf="@id/iv_line_1"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/iv_line_1" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="热水温度（单位：°C）"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_line_4"
+        app:layout_constraintTop_toBottomOf="@id/ops_top_top" />
+
+    <ImageView
+        android:id="@+id/iv_line_2"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="150dp"
+        android:src="@drawable/shape_dotted_line"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ops_top_top" />
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_jian_tmp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="70dp"-->
+    <!--android:layout_marginRight="@dimen/dp_10"-->
+    <!--android:src="@mipmap/icon_jian"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/iv_line_2"-->
+    <!--app:layout_constraintLeft_toLeftOf="@id/iv_line_2"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/iv_line_2" />-->
+
+    <EditText
+        android:id="@+id/et_tmp"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_corner_retagne_black"
+        android:gravity="center"
+        android:hint="请输入温度（数字)"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_line_2"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_line_2"
+        app:layout_constraintRight_toRightOf="@+id/iv_line_2"
+        app:layout_constraintTop_toTopOf="@+id/iv_line_2" />
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_jia_tmp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="70dp"-->
+    <!--android:src="@mipmap/icon_jia"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/iv_line_2"-->
+    <!--app:layout_constraintRight_toRightOf="@id/iv_line_2"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/iv_line_2" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="一键填满(单位：个)"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_line_4"
+        app:layout_constraintTop_toBottomOf="@id/iv_line_1" />
+
+    <ImageView
+        android:id="@+id/iv_line_4"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="150dp"
+        android:src="@drawable/shape_dotted_line"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_line_1" />
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_jian_key"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="70dp"-->
+    <!--android:layout_marginRight="@dimen/dp_10"-->
+    <!--android:src="@mipmap/icon_jian"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/iv_line_4"-->
+    <!--app:layout_constraintLeft_toLeftOf="@id/iv_line_4"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/iv_line_4" />-->
+
+    <EditText
+        android:id="@+id/et_key_full"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_corner_retagne_black"
+        android:gravity="center"
+        android:hint="输入数字"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_line_4"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_line_4"
+        app:layout_constraintRight_toRightOf="@+id/iv_line_4"
+        app:layout_constraintTop_toTopOf="@+id/iv_line_4" />
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_jia_full"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="70dp"-->
+    <!--android:src="@mipmap/icon_jia"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/iv_line_4"-->
+    <!--app:layout_constraintRight_toRightOf="@id/iv_line_4"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/iv_line_4" />-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="55dp"
+        android:text="音量"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_line_1" />
+
+    <ImageView
+        android:id="@+id/iv_line_3"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/shape_dotted_line"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_line_1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="系统音量"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line_3"
+        app:layout_constraintTop_toTopOf="@id/iv_line_3" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/system_seek"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:max="10"
+        app:layout_constraintRight_toRightOf="@id/iv_line_3"
+        app:layout_constraintTop_toTopOf="@id/iv_line_3"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line_3" />
+
+    <TextView
+        android:id="@+id/tv_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="多媒体音量"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line_3"
+        app:layout_constraintTop_toTopOf="@id/system_seek"
+        app:layout_constraintBottom_toBottomOf="@id/media_seek"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/media_seek"
+        android:max="10"
+        android:layout_width="@dimen/dp_140"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_35"
+        app:layout_constraintBottom_toBottomOf="@id/iv_line_3"
+        app:layout_constraintRight_toRightOf="@id/iv_line_3"
+        app:layout_constraintTop_toTopOf="@id/iv_line_3"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line_3" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@drawable/shape_corner_retagne_yellow"
+        android:text="退出程序"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line_1"
+        app:layout_constraintRight_toRightOf="@id/iv_line_1" />
+
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@drawable/shape_corner_retagne_yellow"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/iv_line_4"
+        app:layout_constraintRight_toRightOf="@id/iv_line_4" />
+
+
+</android.support.constraint.ConstraintLayout>

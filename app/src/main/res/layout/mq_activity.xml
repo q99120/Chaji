@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TimePicker
+        android:id="@+id/timePic1"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:timePickerMode="spinner"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_ccc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/timePic1"
+        app:layout_constraintLeft_toLeftOf="@+id/timePic1"/>
+
+    <Button
+        android:id="@+id/btn_ddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ccc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn_eee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="eeee"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ddd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn_fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ffff"
+        app:layout_constraintTop_toBottomOf="@+id/btn_eee"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn_ggg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gggg"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

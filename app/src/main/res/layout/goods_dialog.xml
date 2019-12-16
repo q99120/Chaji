@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_750"
+    android:background="#ffffff"
+    tools:context=".ui.main.activity.OpsActivity">
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_bg"-->
+        <!--app:layout_constraintBottom_toTopOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--android:background="@drawable/shape_corner_retagne"-->
+        <!--android:layout_width="@dimen/dp_800"-->
+        <!--android:layout_height="@dimen/dp_700" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcl_goods"
+        android:layout_marginTop="10dp"
+        android:layout_width="1000dp"
+        android:layout_height="600dp"
+        android:background="@drawable/shape_corner_retagne"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_corner_retagne_yellow"
+        android:text="取消"
+        android:textSize="25sp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="@dimen/dp_100"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_corner_retagne_yellow"
+        android:text="确定"
+        android:layout_marginLeft="@dimen/dp_100"
+        android:textSize="25sp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

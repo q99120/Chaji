@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".ui.main.activity.PayActivity">
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/viewpageree"
+        android:layout_width="805dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_youhui"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:src="@mipmap/erweima"
+        app:layout_constraintBottom_toBottomOf="@+id/viewpageree"
+        app:layout_constraintLeft_toLeftOf="@+id/viewpageree" />
+
+    <TextView
+        android:text="扫码关注获取优惠"
+        android:id="@+id/tv_sao"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/iv_youhui"
+        app:layout_constraintLeft_toLeftOf="@id/iv_youhui"
+        app:layout_constraintRight_toRightOf="@id/iv_youhui"
+        android:layout_height="wrap_content" />
+
+
+
+    <ImageView
+        android:id="@+id/qr_code_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="130dp"
+        android:visibility="invisible"
+        android:src="@mipmap/qr_code_bg"
+        app:layout_constraintLeft_toRightOf="@id/viewpageree"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_wx_qr"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="@id/qr_code_bg"
+        app:layout_constraintTop_toTopOf="@+id/qr_code_bg" />
+
+    <ImageView
+        android:id="@+id/iv_ali_qr"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintRight_toRightOf="@id/qr_code_bg"
+        app:layout_constraintTop_toTopOf="@id/qr_code_bg" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/iv_face_pay"
+        android:layout_marginTop="35dp"
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/ali_face"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/viewpageree"
+        app:layout_constraintTop_toBottomOf="@id/iv_ali_qr" />
+
+
+    <TextView
+        app:layout_constraintLeft_toLeftOf="@id/iv_ali_qr"
+        app:layout_constraintRight_toRightOf="@id/iv_ali_qr"
+        app:layout_constraintBottom_toTopOf="@+id/iv_ali_qr"
+        android:textSize="15sp"
+        android:text="支付就用支付宝"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_ali_add"
+        android:src="@mipmap/ali_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/viewpageree"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:src="@mipmap/alihuodong"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_85"
+        app:layout_constraintTop_toTopOf="@id/iv_ali_add"
+        app:layout_constraintRight_toRightOf="@id/iv_ali_add" />
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_face_pay"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/face_bottom_bg"-->
+        <!--app:layout_constraintLeft_toRightOf="@id/iv_wx_qr"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/iv_ali_qr"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/qr_code_bg" />-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/dp_40"-->
+        <!--android:src="@mipmap/icon_face"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/iv_face_pay"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/iv_face_pay"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/iv_face_pay" />-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_shualian"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="@dimen/dp_40"-->
+        <!--android:layout_marginBottom="@dimen/dp_25"-->
+        <!--android:text="支付宝刷脸付"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="20sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/iv_face_pay"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/iv_face_pay"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/iv_face_pay" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:text="点击开启人脸识别"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="10sp"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/iv_face_pay"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/tv_shualian"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/tv_shualian"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/iv_face_pay" />-->
+
+    <TextView
+        android:id="@+id/tv_cup_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:textColor="#111111"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/viewpageree"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/pay_time"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toRightOf="@+id/viewpageree"
+        android:text="请在60S内完成支付"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/back"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

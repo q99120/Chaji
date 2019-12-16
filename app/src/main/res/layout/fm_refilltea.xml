@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.main.activity.OpsActivity">
+
+    <ImageView
+        android:id="@+id/iv_ad"
+        android:scaleType="fitXY"
+        android:layout_width="@dimen/dp_387"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ad1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/into_gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/incup"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_ad"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/refill_status"
+        app:layout_constraintLeft_toLeftOf="@+id/into_gif"
+        app:layout_constraintRight_toRightOf="@+id/into_gif"
+        app:layout_constraintTop_toBottomOf="@+id/into_gif"
+        android:textSize="20sp"
+        android:text="请将杯子放入杯托(20S)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</android.support.constraint.ConstraintLayout>

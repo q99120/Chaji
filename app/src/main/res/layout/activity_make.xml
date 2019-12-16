@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".ui.main.activity.AdpicActivity">
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/viewpageree"
+        android:layout_width="805dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/make_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="正在制作"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/viewpageree"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="小心烫伤"
+        android:textColor="#FF4500"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@+id/viewpageree"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/make_status" />
+
+    <TextView
+        android:id="@+id/tv_times"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/make_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.mei.chaji.utils.WaveProgress
+        android:id="@+id/wave_progress"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        app:layout_constraintBottom_toBottomOf="@id/orderAmount"
+        app:layout_constraintLeft_toRightOf="@+id/viewpageree"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/make_status"
+        android:background="@drawable/bg_wave_progress"/>
+
+    <TextView
+        android:id="@+id/orderAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toRightOf="@+id/viewpageree"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wave_progress" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:src="@color/circle_bg"
+        app:layout_constraintLeft_toRightOf="@+id/viewpageree"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orderAmount" />
+
+
+    <TextView
+        android:id="@+id/preAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/chocolate"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@+id/viewpageree"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orderAmount" />
+
+
+    <ImageView
+        android:id="@+id/iv_youhui"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:src="@mipmap/erweima"
+        app:layout_constraintBottom_toBottomOf="@+id/viewpageree"
+        app:layout_constraintLeft_toLeftOf="@+id/viewpageree" />
+
+    <TextView
+        android:id="@+id/tv_sao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="扫码关注获取优惠"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@id/iv_youhui"
+        app:layout_constraintRight_toRightOf="@id/iv_youhui"
+        app:layout_constraintTop_toBottomOf="@+id/iv_youhui" />
+
+    <TextView
+        android:id="@+id/tv_yunwei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="400-656-0800"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="30dp"
+        android:src="@mipmap/tel_p"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_yunwei" />
+
+</android.support.constraint.ConstraintLayout>
