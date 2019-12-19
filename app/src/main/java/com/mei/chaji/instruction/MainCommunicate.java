@@ -114,7 +114,7 @@ public class MainCommunicate {
             serialPortStatus = false;
             this.threadStatus = true; //线程状态
             //终止线程
-            ReadThread.interrupted();
+//            ReadThread.interrupted();
             serialPort.close();
         } catch (IOException e) {
             Log.e(TAG, "SerialPort: 关闭串口异常：" + e.toString());
@@ -549,11 +549,11 @@ public class MainCommunicate {
                     if (size >0) {
                         onDataReceived(buffer, size);
                     }else {
-                        //如果没有数据超过5秒就关闭串口和流并重新打开
-                        if (serialPortStatus) {
-                            serialPortStatus = false;
-                            handler.sendEmptyMessageDelayed(1, 5000);
-                        }
+//                        //如果没有数据超过5秒就关闭串口和流并重新打开
+//                        if (serialPortStatus) {
+//                            serialPortStatus = false;
+//                            handler.sendEmptyMessageDelayed(1, 5000);
+//                        }
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
