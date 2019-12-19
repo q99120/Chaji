@@ -1,5 +1,8 @@
 package com.mei.chaji.instruction;
 
+import android.annotation.SuppressLint;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.widget.TextView;
 
@@ -110,6 +113,8 @@ public class MainCommunicate {
 
             serialPortStatus = false;
             this.threadStatus = true; //线程状态
+            //终止线程
+            ReadThread.interrupted();
             serialPort.close();
         } catch (IOException e) {
             Log.e(TAG, "SerialPort: 关闭串口异常：" + e.toString());
@@ -541,8 +546,14 @@ public class MainCommunicate {
                     byte[] buffer = new byte[1024];
                     int size = inputStream.read(buffer, 0, buffer.length);
 //                    Log.e(TAG, "个数"+size );
-                    if (size == 12) {
+                    if (size >0) {
                         onDataReceived(buffer, size);
+                    }else {
+                        //如果没有数据超过5秒就关闭串口和流并重新打开
+                        if (serialPortStatus) {
+                            serialPortStatus = false;
+                            handler.sendEmptyMessageDelayed(1, 5000);
+                        }
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -577,6 +588,22 @@ public class MainCommunicate {
 //            }
         }
     }
+
+    @SuppressLint("HandlerLeak")
+    Handler handler = new Handler(){
+        public void handleMessage(Message  message){
+            switch (message.what){
+                case 1:
+                    closeSerialPort();
+                    //3秒后再打开线程
+                    handler.sendEmptyMessageDelayed(2,3000);
+                    break;
+                case 2:
+                    openSerialPort();
+                    break;
+            }
+        }
+    };
 
     /**
      * 得到最后的指令
